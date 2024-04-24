@@ -25,7 +25,7 @@ public class Sheep {
 		tail.drawAt(x, y, pen);
 		body.drawAt(x, y, pen);
 		ear1.drawAt(x, y, pen);
-		ear2.drawAt(x-170, y, pen);
+		ear2.drawAt(x-165, y, pen);
 		head.drawAt(x, y, pen);
 		eye1.drawAt(x, y, pen);
 		eye2.drawAt(x+50, y, pen);
