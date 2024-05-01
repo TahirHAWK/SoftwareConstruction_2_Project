@@ -16,9 +16,13 @@ public class Eye {
 			
 		}
 		
+		public Eye(int xAxis, int yAxis) {
+			setEyePosition(xAxis, yAxis);
+		}
+		
 public void drawAt(int x, int y, Graphics pen){
 	
-		setEyePosition(-16, 70);
+		
 		pen.setColor(Color.white);
 		pen.fillOval(x+whitePartWidth, y+whitePartHeight, 30, 30);
 		pen.setColor(Color.black);

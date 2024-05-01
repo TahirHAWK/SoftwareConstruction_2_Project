@@ -11,14 +11,14 @@ public class Sheep {
 	private Tail tail;
 	
 	public Sheep() {
-		head = new Head();
-		eye1 = new Eye();
-		eye2 = new Eye();
+		head = new Head(150, 120);
+		eye1 = new Eye(-16, 70);
+		eye2 = new Eye(-16, 70);
 		body = new Body();
-		tail = new Tail();
-		mouth = new Mouth();
-		ear1 = new Ear();
-		ear2 = new Ear();
+		tail = new Tail(40, 20);
+		mouth = new Mouth(50, 20);
+		ear1 = new Ear(100, 40);
+		ear2 = new Ear(100, 40);
 		}
 	
 	public void drawAt(int x, int y, Graphics pen){
