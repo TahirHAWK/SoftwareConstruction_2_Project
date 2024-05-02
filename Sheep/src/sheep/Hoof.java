@@ -14,8 +14,6 @@ public class Hoof {
 		this.width = width;
 	}
 public void drawAt(int x, int y, Graphics pen){
-	
-	
 		pen.setColor(Color.BLACK);
 		pen.fillRect(x-10, y+75, width, height);
 		
