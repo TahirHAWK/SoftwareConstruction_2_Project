@@ -8,6 +8,8 @@
 
 package sheep;
 import java.awt.*;
+import java.util.ArrayList;
+
 import javax.swing.JPanel;
 
 public class DrawingArea extends JPanel {
@@ -15,10 +17,34 @@ public class DrawingArea extends JPanel {
 
 	protected void paintComponent(Graphics pen) {
 		super.paintComponent(pen);
-		Sheep sheep = new Sheep();
-		
-		
-		sheep.drawAt(500, 300, pen);
-
+		Scene scene = new Scene();
+		scene.drawAt(pen);
 	}
+}
+
+ class Scene {
+	 private Sheep sheep1 = new Sheep();
+	 private Sheep sheep2 = new Sheep();
+	 private Sheep sheep3 = new Sheep();
+	 private Sheep sheep4 = new Sheep();
+	 private ArrayList<Sheep> Sheeps;
+	 
+	 public Scene() {
+		 Sheeps = new ArrayList<Sheep>();
+		 
+		 Sheeps.add(sheep1);
+		 Sheeps.add(sheep2);
+		 Sheeps.add(sheep3);
+		 Sheeps.add(sheep4);
+	 }
+	 
+	 public void drawAt(Graphics pen) {
+		 for(int i = 0; i< Sheeps.size(); i++) {
+			 int height = 100 + i *150;
+			 int width = 110;
+			 Sheeps.get(i).drawAt(height, width, pen);
+		 }
+		 
+	 }
+	
 }
