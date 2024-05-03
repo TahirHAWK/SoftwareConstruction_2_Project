@@ -7,6 +7,7 @@ public class Head {
 	private Mouth mouth;
 	private Ear ear1, ear2;
 	private Eye eye1, eye2;
+	private Nose nose;
 	
 	public void setHeightWidth(int height, int width) {
 		this.height = height;
@@ -20,6 +21,7 @@ public class Head {
 		ear2 = new Ear(100, 40);
 		eye1 = new Eye(-16, 70);
 		eye2 = new Eye(-16, 70);
+		nose = new Nose(15, 15);
 	}
 	
 public void drawAt(int x, int y, Graphics pen){
@@ -34,6 +36,7 @@ public void drawAt(int x, int y, Graphics pen){
 		eye1.drawAt(x, y, pen);
 		eye2.drawAt(x+50, y, pen);
 		mouth.drawAt(x, y, pen);
+		nose.drawAt(x, y, pen);
 
 	}
 }

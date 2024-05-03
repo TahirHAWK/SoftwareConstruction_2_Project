@@ -33,15 +33,12 @@ public class DrawingArea extends JPanel {
 		 Sheeps = new ArrayList<Sheep>();
 		 
 		 Sheeps.add(sheep1);
-		 Sheeps.add(sheep2);
-		 Sheeps.add(sheep3);
-		 Sheeps.add(sheep4);
 	 }
 	 
 	 public void drawAt(Graphics pen) {
 		 for(int i = 0; i< Sheeps.size(); i++) {
-			 int height = 100 + i *150;
-			 int width = 110;
+			 int height = 700 + i *200;
+			 int width = 500;
 			 Sheeps.get(i).drawAt(height, width, pen);
 		 }
 		 
