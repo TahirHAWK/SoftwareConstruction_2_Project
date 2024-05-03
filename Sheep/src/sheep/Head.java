@@ -16,12 +16,12 @@ public class Head {
 	
 	public Head(int height, int width) {
 		setHeightWidth(height, width);
-		mouth = new Mouth(50, 20);
+		mouth = new Mouth(155, 30);
 		ear1 = new Ear(100, 40);
 		ear2 = new Ear(100, 40);
 		eye1 = new Eye(-16, 70);
 		eye2 = new Eye(-16, 70);
-		nose = new Nose(15, 15);
+		nose = new Nose(147, 20);
 	}
 	
 public void drawAt(int x, int y, Graphics pen){
