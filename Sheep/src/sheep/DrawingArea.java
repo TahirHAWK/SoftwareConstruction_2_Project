@@ -38,7 +38,7 @@ public class DrawingArea extends JPanel {
 	 public void drawAt(Graphics pen) {
 		 for(int i = 0; i< Sheeps.size(); i++) {
 			 int height = 700 + i *200;
-			 int width = 500;
+			 int width = 200;
 			 Sheeps.get(i).drawAt(height, width, pen);
 		 }
 		 

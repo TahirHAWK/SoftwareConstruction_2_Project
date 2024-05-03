@@ -3,7 +3,7 @@ package sheep;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Body {
+public class Body{
 	
 	private Leg leg1, leg2, leg3, leg4;
 	private Tail tail;
