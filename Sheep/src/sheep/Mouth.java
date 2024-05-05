@@ -14,8 +14,8 @@ public class Mouth {
 		setHeight(height);
 		setWidth(width);
 	}
-public void drawAt(int x, int y, Graphics pen){
+public void drawAt(int left, int bottom, Graphics pen){
 		pen.setColor(Color.GRAY);
-		pen.drawLine(x+10, y+155, x+height, y+width);	
+		pen.drawLine(left+10, bottom+155, left+height, bottom+width);	
 	}
 }

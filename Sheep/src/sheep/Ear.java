@@ -16,10 +16,10 @@ public class Ear {
 		setHeightWidth(height, width);
 	}
 	
-public void drawAt(int x, int y, Graphics pen){
+public void drawAt(int left, int bottom, Graphics pen){
 		
 		pen.setColor(Color.GRAY);
-		pen.fillOval(x+55, y+50, height , width );
+		pen.fillOval(left+55, bottom+50, height , width );
 		
 	}
 }

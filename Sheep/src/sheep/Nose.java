@@ -14,13 +14,13 @@ public class Nose {
 		setHeightWidth(height, width);
 	}
 	
-public void drawAt(int x, int y, Graphics pen){
+public void drawAt(int left, int bottom, Graphics pen){
 		
 		pen.setColor(Color.BLACK);
 		//pen.fillOval(x+700, y+50, height , width);
-		pen.drawLine(x+5, y+130, x+width, y+height);
-		pen.drawLine(x+width, y+height, x+35 ,y+130);
-		pen.drawLine(x+width, y+height, x+width ,y+155);
+		pen.drawLine(left+5, bottom+130, left+width, bottom+height);
+		pen.drawLine(left+width, bottom+height, left+35 , bottom+130);
+		pen.drawLine(left+width, bottom+height, left+width , bottom+155);
 		
 	}
 }

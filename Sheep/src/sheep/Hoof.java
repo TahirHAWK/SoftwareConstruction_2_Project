@@ -23,9 +23,9 @@ public class Hoof extends Leg{
 	public void widthSetter(int width) {
 		this.width = width;
 	}
-public void drawAt(int x, int y, Graphics pen){
+public void drawAt(int left, int bottom, Graphics pen){
 		pen.setColor(Color.BLACK);
-		pen.fillRect(x-10, y+75, width, height);
+		pen.fillRect(left-10, bottom+75, width, height);
 		
 	}
 }

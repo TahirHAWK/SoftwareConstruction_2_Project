@@ -14,10 +14,10 @@ public class Tail{
 		this.height = height;
 		this.width = width;
 	}
-public void drawAt(int x, int y, Graphics pen){
+public void drawAt(int left, int bottom, Graphics pen){
 	
 		pen.setColor(Color.darkGray);
-		pen.fillOval(x+380, y+50, height, width);
+		pen.fillOval(left+380, bottom+50, height, width);
 		
 	}
 }

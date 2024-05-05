@@ -24,19 +24,19 @@ public class Head {
 		nose = new Nose(147, 20);
 	}
 	
-public void drawAt(int x, int y, Graphics pen){
+public void drawAt(int left, int bottom, Graphics pen){
 	
 		
-		ear1.drawAt(x, y, pen);
-		ear2.drawAt(x-165, y, pen);
+		ear1.drawAt(left, bottom, pen);
+		ear2.drawAt(left-165, bottom, pen);
 
 		pen.setColor(Color.LIGHT_GRAY);
-		pen.fillOval(x-40, y+25, width, height);
+		pen.fillOval(left-40, bottom+25, width, height);
 		
-		eye1.drawAt(x, y, pen);
-		eye2.drawAt(x+50, y, pen);
-		mouth.drawAt(x, y, pen);
-		nose.drawAt(x, y, pen);
+		eye1.drawAt(left, bottom, pen);
+		eye2.drawAt(left+50, bottom, pen);
+		mouth.drawAt(left, bottom, pen);
+		nose.drawAt(left, bottom, pen);
 
 	}
 }

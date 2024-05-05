@@ -23,14 +23,14 @@ public class Leg{
 		widthSetter(width);
 	}
 	
-public void drawAt(int x, int y, Graphics pen){
+public void drawAt(int left, int bottom, Graphics pen){
 	 	
 		pen.setColor(Color.GRAY);
 //		height 110, width 20
-		pen.fillRect(x, y, width, height);
+		pen.fillRect(left, bottom, width, height);
 		
 		
 		hoof = new Hoof(35, 30);
-		hoof.drawAt(x, y, pen);
+		hoof.drawAt(left, bottom, pen);
 	}
 }

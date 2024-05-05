@@ -44,8 +44,7 @@ public class DrawingArea extends JPanel {
 			 int height = 700 + i *200;
 			 int width = 200;
 			 Sheeps.get(i).drawAt(height, width, pen);
-		 }
-		 
+		 } 
 	 }
 	 
 	 public void drawAt(Graphics pen, int numberOfSheeps) {	 
@@ -54,6 +53,5 @@ public class DrawingArea extends JPanel {
 			 int width = generateRandom(200, 500);
 			 Sheeps.get(i).drawAt(height, width, pen);
 		 }		 
-	 }
-	
+	 }	
 }

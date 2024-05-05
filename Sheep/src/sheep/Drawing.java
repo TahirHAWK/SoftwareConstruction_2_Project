@@ -1,9 +1,7 @@
 package sheep;
-
 import java.awt.Graphics;
 
 public class Drawing {
-
 	private static Graphics pen = null;
 	
 	public static void set(Graphics pen) {
