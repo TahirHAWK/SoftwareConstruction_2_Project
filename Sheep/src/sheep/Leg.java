@@ -3,7 +3,7 @@ package sheep;
 import java.awt.*;
 
 public class Leg{
-	private Hoof hoof;
+	private Hoof hoof; // composite
 	private int height, width;
 	
 	public void heightSetter(int height){
