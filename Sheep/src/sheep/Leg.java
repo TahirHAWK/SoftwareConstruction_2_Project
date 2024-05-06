@@ -13,9 +13,8 @@ public class Leg{
 	public void widthSetter(int width) {
 		this.width = width;
 	}
-	
-	Leg(){
-		
+//	default constructor 
+	Leg(){	
 	}
 //	constructor initializing basic properties
 	 Leg(int height, int width){
