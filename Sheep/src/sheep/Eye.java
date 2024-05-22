@@ -7,11 +7,11 @@ public class Eye {
 	
 	private int whitePartWidth, blackPartWidth, whitePartHeight, blackPartHeight;
 	
-		public void setEyePosition(int width,int height) {
+		public void setEyePosition(int xAxis,int yAxis) {
 			
-			whitePartWidth = width;
+			whitePartWidth = xAxis;
 			blackPartWidth = whitePartWidth + 5 ;
-			whitePartHeight = height;
+			whitePartHeight = yAxis;
 			blackPartHeight = whitePartHeight + 5;
 			
 		}

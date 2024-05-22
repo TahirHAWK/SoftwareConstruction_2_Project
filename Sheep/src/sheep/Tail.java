@@ -3,21 +3,16 @@ package sheep;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Tail{
-	private int height, width;
+public class Tail extends Organ{
 	
 	public Tail(int height, int width) {
-		setHeightWidth(height, width);
+		super(height, width);
 	}
-	
-	void setHeightWidth(int height, int width) {
-		this.height = height;
-		this.width = width;
-	}
+
 public void drawAt(int left, int bottom, Graphics pen){
 	
 		pen.setColor(Color.darkGray);
-		pen.fillOval(left+380, bottom+50, height, width);
+		pen.fillOval(left+380, bottom+50, super.getHeight(), super.getWidth());
 		
 	}
 }
