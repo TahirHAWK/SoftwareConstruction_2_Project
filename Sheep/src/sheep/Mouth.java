@@ -8,8 +8,8 @@ public class Mouth extends Organ{
 		super(height, width);
 	}
 	
-public void drawAt(int left, int bottom, Graphics pen){
-		pen.setColor(Color.GRAY);
-		pen.drawLine(left+10, bottom+155, left+super.getHeight(), bottom+super.getWidth());	
+public void drawAt(int left, int bottom){
+	Drawing.pen().setColor(Color.GRAY);
+	Drawing.pen().drawLine(left+10, bottom+155, left+super.getHeight(), bottom+super.getWidth());	
 	}
 }

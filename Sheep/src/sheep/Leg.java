@@ -1,5 +1,6 @@
 package sheep;
 
+import java.awt.Color;
 import java.awt.*;
 
 public class Leg extends Organ{
@@ -10,14 +11,14 @@ public class Leg extends Organ{
 		super(height, width);
 	}
 	
-public void drawAt(int left, int bottom, Graphics pen){
+public void drawAt(int left, int bottom){
 	 	
-		pen.setColor(Color.GRAY);
+		Drawing.pen().setColor(Color.GRAY);
 //		height 110, width 20
-		pen.fillRect(left, bottom, super.getWidth(), super.getHeight());
+		Drawing.pen().fillRect(left, bottom, super.getWidth(), super.getHeight());
 		
 		
 		hoof = new Hoof(35, 30);
-		hoof.drawAt(left, bottom, pen);
+		hoof.drawAt(left, bottom);
 	}
 }

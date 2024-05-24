@@ -14,7 +14,7 @@ public class Scene {
 			return  RandomNumber.between(min, max); // 
 			}
 		
-	 public Scene() {
+	 public Scene(int screenWidth, int screenHeight) {
 		 Sheeps = new ArrayList<Sheep>();
 		 Sheeps.add(sheep1);
 		 Sheeps.add(sheep2);
@@ -37,7 +37,7 @@ public class Scene {
 			 
 			 System.out.println(height + width);
 			 if(!vacantProperty(Sheeps.get(i)) || i==0) {
-				 Sheeps.get(i).drawAt(height, width, pen);
+				 Sheeps.get(i).drawAt(height, width);
 			 }
 		 }		 
 	 }	
@@ -48,5 +48,11 @@ public class Scene {
 				intersects = intersects || h.intersects(aSheep);
 			}
 			return !intersects;
+		}
+		
+		public void draw() {
+			for(Sheep aSheep: Sheeps) {
+				aSheep.draw();
+			}
 		}
 }

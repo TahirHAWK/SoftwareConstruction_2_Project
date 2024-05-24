@@ -21,19 +21,19 @@ public class Head extends Organ{
 	
 	
 
-public void drawAt(int left, int bottom, Graphics pen){
+public void drawAt(int left, int bottom){
 	
 		
-		ear1.drawAt(left, bottom, pen);
-		ear2.drawAt(left-165, bottom, pen);
+		ear1.drawAt(left, bottom);
+		ear2.drawAt(left-165, bottom);
 
-		pen.setColor(Color.LIGHT_GRAY);
-		pen.fillOval(left-40, bottom+25, super.getWidth(), super.getHeight());
+		Drawing.pen().setColor(Color.LIGHT_GRAY);
+		Drawing.pen().fillOval(left-40, bottom+25, super.getWidth(), super.getHeight());
 		
-		eye1.drawAt(left, bottom, pen);
-		eye2.drawAt(left+50, bottom, pen);
-		mouth.drawAt(left, bottom, pen);
-		nose.drawAt(left, bottom, pen);
+		eye1.drawAt(left, bottom);
+		eye2.drawAt(left+50, bottom);
+		mouth.drawAt(left, bottom);
+		nose.drawAt(left, bottom);
 
 	}
 }

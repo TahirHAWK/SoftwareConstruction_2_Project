@@ -20,9 +20,9 @@ public class Sheep implements LocatedRectangle {
     }
 
     // Methods
-    public void drawAt(int left, int bottom, Graphics pen) {
-        body.drawAt(left, bottom, pen);
-        head.drawAt(left, bottom, pen);
+    public void drawAt(int left, int bottom) {
+        body.drawAt(left, bottom);
+        head.drawAt(left, bottom);
     }
 
     public int width() {
@@ -39,6 +39,6 @@ public class Sheep implements LocatedRectangle {
     }
 
     public void draw() {
-
+    	drawAt(x, y);
     }
 }

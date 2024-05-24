@@ -20,13 +20,13 @@ public class Eye {
 			setEyePosition(xAxis, yAxis);
 		}
 		
-public void drawAt(int left, int bottom, Graphics pen){
+public void drawAt(int left, int bottom){
 	
 		
-		pen.setColor(Color.white);
-		pen.fillOval(left+whitePartWidth, bottom+whitePartHeight, 30, 30);
-		pen.setColor(Color.black);
-		pen.fillOval(left+blackPartWidth, bottom+blackPartHeight, 16, 16);
+	Drawing.pen().setColor(Color.white);
+	Drawing.pen().fillOval(left+whitePartWidth, bottom+whitePartHeight, 30, 30);
+	Drawing.pen().setColor(Color.black);
+	Drawing.pen().fillOval(left+blackPartWidth, bottom+blackPartHeight, 16, 16);
 		
 	}
 }

@@ -9,9 +9,9 @@ public class Hoof extends Organ{
 		super(height, width);
 	}
 
-public void drawAt(int left, int bottom, Graphics pen){
-		pen.setColor(Color.BLACK);
-		pen.fillRect(left-10, bottom+75, super.getWidth(), super.getHeight());
+public void drawAt(int left, int bottom){
+	Drawing.pen().setColor(Color.BLACK);
+	Drawing.pen().fillRect(left-10, bottom+75, super.getWidth(), super.getHeight());
 		
 	}
 }

@@ -14,16 +14,16 @@ public class Body{
 		tail = new Tail(40, 20);
 	}
 	
-public void drawAt(int left, int bottom, Graphics pen){
+public void drawAt(int left, int bottom){
 	
-	leg1.drawAt(left+150, bottom+230, pen);
-	leg2.drawAt(left+100, bottom+220, pen);
-	leg3.drawAt(left+300, bottom+230, pen);
-	leg4.drawAt(left+250, bottom+220, pen);
-	tail.drawAt(left, bottom, pen);
+	leg1.drawAt(left+150, bottom+230);
+	leg2.drawAt(left+100, bottom+220);
+	leg3.drawAt(left+300, bottom+230);
+	leg4.drawAt(left+250, bottom+220);
+	tail.drawAt(left, bottom);
 		
-		pen.setColor(Color.darkGray);
-		pen.fillOval(left+10, bottom, 400, 250);
+		Drawing.pen().setColor(Color.darkGray);
+		Drawing.pen().fillOval(left+10, bottom, 400, 250);
 		
 	
 		

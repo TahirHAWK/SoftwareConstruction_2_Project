@@ -10,10 +10,10 @@ public class Ear extends Organ{
 		super(height, width);
 	}
 	
-public void drawAt(int left, int bottom, Graphics pen){
+public void drawAt(int left, int bottom){
 		
-		pen.setColor(Color.GRAY);
-		pen.fillOval(left+55, bottom+50, super.getHeight() , super.getWidth() );
+	Drawing.pen().setColor(Color.GRAY);
+	Drawing.pen().fillOval(left+55, bottom+50, super.getHeight() , super.getWidth() );
 		
 	}
 }
