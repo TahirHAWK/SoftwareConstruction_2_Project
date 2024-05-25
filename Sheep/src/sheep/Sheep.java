@@ -9,13 +9,13 @@ public class Sheep implements LocatedRectangle {
     private int x, y;
 
     // Constructor
-    public Sheep(int x , int y) {
+    public Sheep(int x , int y, int height, int width) {
 //    	int x, int y, int height, int width
 //    	150,120
     	this.x = x;
     	this.y = y;
     	
-        head = new Head(150, 120);
+        head = new Head(height, width);
         body = new Body();
     }
 

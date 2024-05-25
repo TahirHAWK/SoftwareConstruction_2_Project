@@ -9,7 +9,7 @@ public class Head extends Organ{
 	private Nose nose;
 
 	public Head(int height, int width) {
-		super(height, width);
+		super(height* 25, width* 40);
 		
 		mouth = new Mouth(155, 30);
 		ear1 = new Ear(100, 40);
