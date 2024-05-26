@@ -9,13 +9,16 @@ public class Head extends Organ{
 	private Nose nose;
 
 	public Head(int height, int width) {
-		super(height* 25, width* 40);
-		
-		mouth = new Mouth(155, 30);
-		ear1 = new Ear(100, 40);
-		ear2 = new Ear(100, 40);
-		eye1 = new Eye(-16, 70);
-		eye2 = new Eye(-16, 70);
+		super((int)(height* 0.25),(int)( width* 0.32));
+//		mouth = 155,30
+//		Ear(100, 40)
+//		Eye(-16, 70)
+//		Nose(147, 20)
+		mouth = new Mouth((int)(height* 0.26),(int)( width* 0.09));
+		ear1 = new Ear((int)(height* 0.167),(int)( width* 0.09));
+		ear2 = new Ear((int)(height* 0.167),(int)( width* 0.09));
+		eye1 = new Eye((int)(-(height* 0.025)),(int)( width* 0.15),height, width);
+		eye2 = new Eye((int)(-(height* 0.025)),(int)( width* 0.15),height,width);
 		nose = new Nose(147, 20);
 	}
 	

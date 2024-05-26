@@ -12,21 +12,15 @@ public class Organ {
 	}
 	
 	public boolean setHeight(int height) {
-		if(height != 0) {
-			this.height = height;
-			return true;			
-		} else {
-			return false;
-		}
+		this.height = height;
+		return true;			
+	
 	}
 	
 	public boolean setWidth(int width) {
-		if(width != 0) {
-			this.width = width;
-			return true;			
-		} else {
-			return false;
-		}
+		this.width = width;
+		return true;			
+		
 	}
 	
 	public int getWidth() {

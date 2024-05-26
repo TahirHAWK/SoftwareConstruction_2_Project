@@ -22,7 +22,7 @@ public class Scene {
 		 this.screenHeight = screenHeight;
 		 this.screenWidth = screenWidth;
 //		 drawSomeSheeps();
-		 int height = 6;
+		 int height = 600;
 		 int width = (int)(height * 0.6603773);
 		 sheep1 = new Sheep(400, 300, height, width);	
 		 Sheeps.add(sheep1);
@@ -31,7 +31,7 @@ public class Scene {
 //		 Sheeps.add(sheep4);
 	 }
 	 
-	 
+//	Currently Not Active 
 	 private void drawSomeSheeps() {
 		 for(int i = 0; i< 500; i++) {
 			 int y = generateRandom(400, 700) + i *200;

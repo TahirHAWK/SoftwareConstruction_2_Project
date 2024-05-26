@@ -2,11 +2,12 @@ package sheep;
 import java.awt.Color;
 import java.awt.Graphics;
 
-public class Body{
+public class Body extends Organ{
 	private Leg leg1, leg2, leg3, leg4;
 	private Tail tail;
 	
-	Body(){
+	Body(int height,int width){
+		super(height, width);
 		leg1 = new Leg(110, 20);
 		leg2 = new Leg(110, 20);
 		leg3 = new Leg(110, 20);
