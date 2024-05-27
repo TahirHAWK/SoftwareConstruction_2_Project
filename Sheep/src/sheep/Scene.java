@@ -6,6 +6,9 @@ import java.util.ArrayList;
 
 public class Scene {
 	 private Sheep sheep1 ;// aggregate
+	 private Sheep sheep2;
+	 private Sheep sheep3;
+	 private Sheep sheep4;
 //	 private Sheep sheep2 = new Sheep(generateRandom(400, 700) + 200, generateRandom(400, 700));	// aggregate
 //	 private Sheep sheep3 = new Sheep(generateRandom(400, 700) + 200, generateRandom(400, 700));	// aggregate
 //	 private Sheep sheep4 = new Sheep(generateRandom(400, 700) + 200, generateRandom(400, 700));	// aggregate
@@ -22,14 +25,18 @@ public class Scene {
 		 this.screenHeight = screenHeight;
 		 this.screenWidth = screenWidth;
 //		 drawSomeSheeps();
-		 int height = 200;
+		 int height = 600;
 		 int width = (int)(height * 0.6603773);
-//		 sheep1 co ordinates 400, 300
-		 sheep1 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);	
+//		 sheep1 co-ordinates 400, 300
+		 sheep1 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
+		 sheep2 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
+		 sheep3 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
+		 sheep4 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
+		 
 		 Sheeps.add(sheep1);
-//		 Sheeps.add(sheep2);
-//		 Sheeps.add(sheep3);
-//		 Sheeps.add(sheep4);
+		 Sheeps.add(sheep2);
+		 Sheeps.add(sheep3);
+		 Sheeps.add(sheep4);
 	 }
 	 
 //	Currently Not Active 
