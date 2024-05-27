@@ -11,9 +11,9 @@ public class Eye {
 		public void setEyePosition(int xAxis,int yAxis) {
 			
 			whitePartWidth = xAxis;
-			blackPartWidth = whitePartWidth + 5 ;
+			blackPartWidth = xAxis + 5 ;
 			whitePartHeight = yAxis;
-			blackPartHeight = whitePartHeight + 5;
+			blackPartHeight = yAxis + 5;
 			
 		}
 		

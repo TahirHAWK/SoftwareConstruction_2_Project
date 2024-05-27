@@ -8,11 +8,13 @@ public class Body extends Organ{
 	
 	Body(int height,int width){
 		super(height, width);
-		leg1 = new Leg(110, 20);
-		leg2 = new Leg(110, 20);
-		leg3 = new Leg(110, 20);
-		leg4 = new Leg(110, 20);
-		tail = new Tail(40, 20);
+//		leg 110, 20
+		leg1 = new Leg((int)(height * 0.184), (int)(width * 0.0506));
+		leg2 = new Leg((int)(height *  0.184), (int)(width * 0.0506));
+		leg3 = new Leg((int)(height *  0.184), (int)(width * 0.0506));
+		leg4 = new Leg((int)(height *  0.184), (int)(width * 0.0506));
+//		 Tail(40, 20);
+		tail = new Tail((int)(height *  0.0667), (int)(width * 0.0506));
 	}
 	
 public void drawAt(int left, int bottom){
@@ -24,7 +26,8 @@ public void drawAt(int left, int bottom){
 	tail.drawAt(left, bottom);
 		
 		Drawing.pen().setColor(Color.darkGray);
-		Drawing.pen().fillOval(left+10, bottom, 400, 250);
+//		400, 250
+		Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
 		
 	
 		

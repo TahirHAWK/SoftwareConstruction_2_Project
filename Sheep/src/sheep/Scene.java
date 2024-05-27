@@ -22,9 +22,10 @@ public class Scene {
 		 this.screenHeight = screenHeight;
 		 this.screenWidth = screenWidth;
 //		 drawSomeSheeps();
-		 int height = 600;
+		 int height = 200;
 		 int width = (int)(height * 0.6603773);
-		 sheep1 = new Sheep(400, 300, height, width);	
+//		 sheep1 co ordinates 400, 300
+		 sheep1 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);	
 		 Sheeps.add(sheep1);
 //		 Sheeps.add(sheep2);
 //		 Sheeps.add(sheep3);

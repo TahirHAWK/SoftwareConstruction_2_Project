@@ -9,6 +9,10 @@ public class Leg extends Organ{
 //	constructor initializing basic properties
 	public Leg(int height, int width){
 		super(height, width);
+//		Hoof(35, 30)
+//		110, 20
+		hoof = new Hoof((int)(height* 0.3182),(int)( width* 1.5));
+		System.out.println(height + ", " + width);
 	}
 	
 public void drawAt(int left, int bottom){
@@ -18,7 +22,6 @@ public void drawAt(int left, int bottom){
 		Drawing.pen().fillRect(left, bottom, super.getWidth(), super.getHeight());
 		
 		
-		hoof = new Hoof(35, 30);
 		hoof.drawAt(left, bottom);
 	}
 }
