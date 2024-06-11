@@ -12,7 +12,6 @@ public class Leg extends Organ{
 //		Hoof(35, 30)
 //		110, 20
 		hoof = new Hoof((int)(height* 0.3182),(int)( width* 1.5));
-		System.out.println(height + ", " + width);
 	}
 	
 public void drawAt(int left, int bottom){
@@ -20,8 +19,6 @@ public void drawAt(int left, int bottom){
 		Drawing.pen().setColor(Color.GRAY);
 //		height 110, width 20
 		Drawing.pen().fillRect(left, bottom, super.getWidth(), super.getHeight());
-		
-		
 		hoof.drawAt(left, bottom);
 	}
 }

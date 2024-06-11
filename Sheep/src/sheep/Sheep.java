@@ -10,7 +10,7 @@ public class Sheep implements LocatedRectangle {
     private int width, height;
 
     // Constructor
-    public Sheep(int x , int y, int height, int width) {
+    public Sheep(int x , int y, int height, int width, Color bodyColor) {
 //    	int x, int y, int height, int width
 //    	150,120
     	this.x = x;
@@ -19,7 +19,7 @@ public class Sheep implements LocatedRectangle {
     	this.height= height; 
     	
         head = new Head(height, width);
-        body = new Body(height, width);
+        body = new Body(height, width, bodyColor);
     }
 
     // Methods

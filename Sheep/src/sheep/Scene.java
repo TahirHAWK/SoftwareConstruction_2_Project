@@ -5,17 +5,9 @@ import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class Scene {
-	 private Sheep sheep1 ;// aggregate
-	 private Sheep sheep2;
-	 private Sheep sheep3;
-	 private Sheep sheep4;
-//	 private Sheep sheep2 = new Sheep(generateRandom(400, 700) + 200, generateRandom(400, 700));	// aggregate
-//	 private Sheep sheep3 = new Sheep(generateRandom(400, 700) + 200, generateRandom(400, 700));	// aggregate
-//	 private Sheep sheep4 = new Sheep(generateRandom(400, 700) + 200, generateRandom(400, 700));	// aggregate
 	 private ArrayList<Sheep> Sheeps;
 	 private int screenWidth;
 	 private int screenHeight;
-	 
 	 public int generateRandom(int min, int max) {
 			return  RandomNumber.between(min, max); // 
 			}
@@ -24,32 +16,23 @@ public class Scene {
 		 Sheeps = new ArrayList<Sheep>();
 		 this.screenHeight = screenHeight;
 		 this.screenWidth = screenWidth;
-//		 drawSomeSheeps();
-		 int height = 600;
-		 int width = (int)(height * 0.6603773);
-//		 sheep1 co-ordinates 400, 300
-		 sheep1 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
-		 sheep2 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
-		 sheep3 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
-		 sheep4 = new Sheep((int)(height * 0.6667), (int)(height * 0.5), height, width);
-		 
-		 Sheeps.add(sheep1);
-		 Sheeps.add(sheep2);
-		 Sheeps.add(sheep3);
-		 Sheeps.add(sheep4);
+		 drawSomeSheeps();
 	 }
 	 
-//	Currently Not Active 
 	 private void drawSomeSheeps() {
-		 for(int i = 0; i< 500; i++) {
-			 int y = generateRandom(400, 700) + i *200;
-			 int x = generateRandom(200, 500);
-			 int height = 100;
-			 int width = 50;
-			 Sheep aSheep = new Sheep( 400, 300, height, width);
-				if ( vacantProperty(aSheep) ) {
+		 for(int i = 0; i< 4; i++) {
+			 int y = generateRandom(0, 650);
+			 int x = generateRandom(100, 1500);
+			 int height = 600;
+			 int width = (int)(height * 0.6603773);
+				int colorR = RandomNumber.between(0, 255);
+				int colorG = RandomNumber.between(0, 255);
+				int colorB = RandomNumber.between(0, 255);
+				int colorA = 255;
+			 Sheep aSheep = new Sheep( x, y, height, width, new Color(colorR, colorG, colorB, colorA));
+				
 					Sheeps.add(aSheep);
-				}
+				
 		 }
 	 }
 	 public void drawAt(Graphics pen, int numberOfSheeps) {	 

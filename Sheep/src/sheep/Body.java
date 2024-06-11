@@ -5,9 +5,11 @@ import java.awt.Graphics;
 public class Body extends Organ{
 	private Leg leg1, leg2, leg3, leg4;
 	private Tail tail;
+	private Color bodyColor;
 	
-	Body(int height,int width){
+	Body(int height,int width, Color bodyColor){
 		super(height, width);
+		this.bodyColor = bodyColor;
 //		leg 110, 20
 		leg1 = new Leg((int)(height * 0.184), (int)(width * 0.0506));
 		leg2 = new Leg((int)(height *  0.184), (int)(width * 0.0506));
@@ -25,7 +27,7 @@ public void drawAt(int left, int bottom){
 	leg4.drawAt(left+250, bottom+220);
 	tail.drawAt(left, bottom);
 		
-		Drawing.pen().setColor(Color.darkGray);
+		Drawing.pen().setColor(this.bodyColor);
 //		400, 250
 		Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
 		
