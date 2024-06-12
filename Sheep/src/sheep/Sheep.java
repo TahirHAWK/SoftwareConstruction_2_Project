@@ -11,16 +11,25 @@ public class Sheep implements LocatedRectangle {
     
 
     // Constructor
-    public Sheep(int x , int y, int height, int width, Color bodyColor) {
+    public Sheep(int x , int y, Color bodyColor, int size) {
 //    	int x, int y, int height, int width
 //    	150,120
     	this.x = x;
     	this.y = y;
-    	this.width= width;
-    	this.height= height; 
+    	this.size = size;
+		 System.out.println(size + " size");
+		 if(size == 0 || size == 3) {
+			 height = 600;
+			 width = (int)(height * 0.6603773);
+			 
+		 } else  {
+			 height = 200;
+			 width = (int)(height * 0.6603773);
+			 
+		 }
     	
-        head = new Head(height, width);
-        body = new Body(height, width, bodyColor);
+        head = new Head(height, width, size);
+        body = new Body(height, width, bodyColor, size);
     }
 
     // Methods
@@ -49,7 +58,13 @@ public class Sheep implements LocatedRectangle {
     public Body getBody() {
     	return this.body;
     }
+    public Head getHead() {
+    	return this.head;
+    }
     public void setSize(int size) {
     	this.size = size;
+    	
+    	getBody().setSize(size);
+    	getHead().setSize(size);
     }
 }

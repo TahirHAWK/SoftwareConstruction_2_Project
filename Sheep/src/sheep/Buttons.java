@@ -19,7 +19,6 @@ public class Buttons {
 	private JButton ColorButtonGray = new JButton("Gray");
 	private JButton ColorButtonBlack = new JButton("Black");
 	private JButton small = new JButton("small");
-	private JButton medium = new JButton("medium");
 	private JButton large = new JButton("large");
 
 	public void addActionListener(ActionListener listener) {
@@ -27,7 +26,6 @@ public class Buttons {
 		ColorButtonGray.addActionListener(listener);
 		ColorButtonBlack.addActionListener(listener);
 		small.addActionListener(listener);
-		medium.addActionListener(listener);
 		large.addActionListener(listener);
 	}
 
@@ -45,7 +43,6 @@ public class Buttons {
 		label2.setText("Size:");
 		menu.add(label2);
 		menu.add(small);
-		menu.add(medium);
 		menu.add(large);
 		menu.setBorder(BorderFactory.createRaisedBevelBorder());
 		frame.add(menu, BorderLayout.WEST);
@@ -64,10 +61,6 @@ public class Buttons {
 	}
 	public JButton getSmall() {
 		return small;
-	}
-
-	public JButton getMedium() {
-		return medium;
 	}
 
 	public JButton getLarge() {
