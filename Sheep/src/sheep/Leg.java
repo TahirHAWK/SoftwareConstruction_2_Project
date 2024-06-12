@@ -35,5 +35,15 @@ public void drawAt(int left, int bottom){
 
 public void setSize(int size) {
 	this.size = size;
+	hoof.setSize(size);
+	
+//	((int)(height * 0.184), (int)(width * 0.0506)
+	if(size == 1) {
+		this.setHeight((int)(200 * 0.184));
+		this.setWidth((int)( 200 * 0.6603773 * 0.0506));
+	} else {
+		this.setHeight((int)(600* 0.184));
+		this.setWidth((int)(600 * 0.6603773 * 0.0506));		
+	}
 }
 }

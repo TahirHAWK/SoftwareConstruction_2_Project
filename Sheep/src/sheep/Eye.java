@@ -6,7 +6,7 @@ import java.awt.Graphics;
 public class Eye {
 	
 	private int whitePartWidth, blackPartWidth, whitePartHeight, blackPartHeight;
-	private int height, width;
+	private int height, width, size;
 	
 		public void setEyePosition(int xAxis,int yAxis) {
 			
@@ -31,5 +31,8 @@ public void drawAt(int left, int bottom){
 	Drawing.pen().setColor(Color.black);
 	Drawing.pen().fillOval(left+blackPartWidth, bottom+blackPartHeight, (int)(width*0.042), (int)(width*0.042));
 		
+	}
+public void setSize(int size) {
+	this.size = size;
 	}
 }

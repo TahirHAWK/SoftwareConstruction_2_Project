@@ -17,7 +17,6 @@ public class Sheep implements LocatedRectangle {
     	this.x = x;
     	this.y = y;
     	this.size = size;
-		 System.out.println(size + " size");
 		 if(size == 0 || size == 3) {
 			 height = 600;
 			 width = (int)(height * 0.6603773);
@@ -61,10 +60,11 @@ public class Sheep implements LocatedRectangle {
     public Head getHead() {
     	return this.head;
     }
+    
+    
     public void setSize(int size) {
     	this.size = size;
-    	
     	getBody().setSize(size);
-    	getHead().setSize(size);
+    	getHead().setSize(size);   	
     }
 }

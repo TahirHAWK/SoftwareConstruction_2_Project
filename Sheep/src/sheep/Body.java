@@ -30,7 +30,6 @@ public void drawAt(int left, int bottom){
 		leg3.drawAt(left+300, bottom+230);
 		leg4.drawAt(left+250, bottom+220);
 		tail.drawAt(left, bottom);
-			
 			Drawing.pen().setColor(this.bodyColor);
 ////			400, 250
 			Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
@@ -51,11 +50,25 @@ public void drawAt(int left, int bottom){
 		
 	}
 
-public void setColor(Color bodyColor) {
+	public void setColor(Color bodyColor) {
 	this.bodyColor = bodyColor;
-}
-public void setSize(int size) {
+	}
+	
+	
+	public void setSize(int size) {
+		leg1.setSize(size);
+		leg2.setSize(size);
+		leg3.setSize(size);
+		leg4.setSize(size);
+		tail.setSize(size);
 	this.size = size;
-}
+	if(size == 1) {
+		this.setHeight(200);
+		this.setWidth((int)(200 * 0.6603773));
+		} else {
+		this.setHeight(600);
+		this.setWidth((int)(600 * 0.6603773));		
+		}
+	}
 
 }

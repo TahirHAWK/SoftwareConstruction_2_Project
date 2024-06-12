@@ -55,5 +55,20 @@ public void drawAt(int left, int bottom){
 
 	public void setSize(int size) {
 	this.size = size;
+	
+	ear1.setSize(size);
+	ear2.setSize(size);
+	mouth.setSize(size);
+	nose.setSize(size);
+	
+	if(size==1)
+	{
+		this.setHeight((int)(200* 0.25));
+		this.setWidth((int)( 200 * 0.6603773* 0.32));
+	}else {
+		this.setHeight((int)(600* 0.25));
+		this.setWidth((int)(600 * 0.6603773* 0.32));		
+		}
 }
+	
 }
