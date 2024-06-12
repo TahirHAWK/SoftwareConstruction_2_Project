@@ -3,6 +3,7 @@ package sheep;
 
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -40,7 +41,7 @@ public class DrawingTool extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == buttons.getColorButtonGreen()) {
 			tidyUpDrawingArea();
-//			drawing.getVillage().setHouses();
+			drawing.changeColor(Color.green);
 			System.out.println("green");
 		} else if (e.getSource() == buttons.getColorButtonGray()) {
 			tidyUpDrawingArea();

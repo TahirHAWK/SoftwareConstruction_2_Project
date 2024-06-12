@@ -50,9 +50,9 @@ public class Scene {
 			}
 		}
 		
-		public void setGreen() {
+		public void setColor(Color color) {
 			for(Sheep aSheep: Sheeps) {
-				aSheep.draw();
+				aSheep.getBody().setColor(color);
 			}
 		}
 }

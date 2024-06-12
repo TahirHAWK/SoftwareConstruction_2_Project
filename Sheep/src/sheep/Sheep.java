@@ -45,4 +45,8 @@ public class Sheep implements LocatedRectangle {
     public void draw() {
     	drawAt(x, y);
     }
+    
+    public Body getBody() {
+    	return this.body;
+    }
 }

@@ -28,4 +28,8 @@ public class DrawingArea extends JPanel {
 		Drawing.set(pen);
 		scene.draw();
 	}
+	
+	public void changeColor(Color c) {
+		scene.setColor(c);
+	}
 }

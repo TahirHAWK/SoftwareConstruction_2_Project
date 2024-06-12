@@ -17,6 +17,7 @@ public class Body extends Organ{
 		leg4 = new Leg((int)(height *  0.184), (int)(width * 0.0506));
 //		 Tail(40, 20);
 		tail = new Tail((int)(height *  0.0667), (int)(width * 0.0506));
+		System.out.println(bodyColor);
 	}
 	
 public void drawAt(int left, int bottom){
@@ -34,4 +35,7 @@ public void drawAt(int left, int bottom){
 	
 		
 	}
+public void setColor(Color bodyColor) {
+	this.bodyColor = bodyColor;
+}
 }
