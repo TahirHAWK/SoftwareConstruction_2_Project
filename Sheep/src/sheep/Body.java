@@ -21,20 +21,31 @@ public class Body extends Organ{
 	}
 	
 public void drawAt(int left, int bottom){
+//	for large size
+//	leg1.drawAt(left+150, bottom+230);
+//	leg2.drawAt(left+100, bottom+220);
+//	leg3.drawAt(left+300, bottom+230);
+//	leg4.drawAt(left+250, bottom+220);
+//	tail.drawAt(left, bottom);
+//		
+//		Drawing.pen().setColor(this.bodyColor);
+////		400, 250
+//		Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
 	
-	leg1.drawAt(left+150, bottom+230);
-	leg2.drawAt(left+100, bottom+220);
-	leg3.drawAt(left+300, bottom+230);
-	leg4.drawAt(left+250, bottom+220);
-	tail.drawAt(left, bottom);
-		
-		Drawing.pen().setColor(this.bodyColor);
-//		400, 250
-		Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
-		
+//		for size small
+		leg1.drawAt(left+60, bottom+75);
+		leg2.drawAt(left+35, bottom+70);
+		leg3.drawAt(left+90, bottom+70);
+		leg4.drawAt(left+110, bottom+75);
+		tail.drawAt(left-245, bottom-25);
+			
+			Drawing.pen().setColor(this.bodyColor);
+//			400, 250
+			Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
 	
 		
 	}
+
 public void setColor(Color bodyColor) {
 	this.bodyColor = bodyColor;
 }

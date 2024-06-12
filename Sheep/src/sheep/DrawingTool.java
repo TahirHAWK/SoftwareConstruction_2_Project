@@ -53,15 +53,11 @@ public class DrawingTool extends JFrame implements ActionListener {
 			System.out.println("black");
 		} else if (e.getSource() == buttons.getSmall()) {
 			tidyUpDrawingArea();
-//			drawing.getVillage().setTrees();
+			drawing.changeSize(1);
 			System.out.println("small");
-		} else if (e.getSource() == buttons.getMedium()) {
+		}  else if (e.getSource() == buttons.getLarge()) {
 			tidyUpDrawingArea();
-//			drawing.getVillage().setVillage();
-			System.out.println("medium");
-		} else if (e.getSource() == buttons.getLarge()) {
-			tidyUpDrawingArea();
-//			drawing.getVillage().setVillage();
+			drawing.changeSize(3);
 			System.out.println("large");
 		} 
 	}

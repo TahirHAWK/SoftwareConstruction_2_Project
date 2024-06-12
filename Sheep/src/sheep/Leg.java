@@ -15,10 +15,16 @@ public class Leg extends Organ{
 	}
 	
 public void drawAt(int left, int bottom){
-	 	
+// for large size	 	
+//		Drawing.pen().setColor(Color.GRAY);
+////		height 110, width 20
+//		Drawing.pen().fillRect(left, bottom, super.getWidth(), super.getHeight());
+//		hoof.drawAt(left, bottom);
+		
+//		for small size
 		Drawing.pen().setColor(Color.GRAY);
 //		height 110, width 20
 		Drawing.pen().fillRect(left, bottom, super.getWidth(), super.getHeight());
-		hoof.drawAt(left, bottom);
+		hoof.drawAt(left+7, bottom-45);
 	}
 }

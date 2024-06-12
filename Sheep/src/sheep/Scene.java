@@ -6,8 +6,7 @@ import java.util.ArrayList;
 
 public class Scene {
 	 private ArrayList<Sheep> Sheeps;
-	 private int screenWidth;
-	 private int screenHeight;
+	 private int screenWidth, screenHeight, size;
 	 public int generateRandom(int min, int max) {
 			return  RandomNumber.between(min, max); // 
 			}
@@ -20,16 +19,18 @@ public class Scene {
 	 }
 	 
 	 private void drawSomeSheeps() {
-		 for(int i = 0; i< 2; i++) {
+		 for(int i = 0; i< 1; i++) {
 			 int y = generateRandom(0, 650);
 			 int x = generateRandom(100, 1500);
-			 int height = 600;
+//			 int height = 600;
+//			 int width = (int)(height * 0.6603773);
+			 int height = 200;
 			 int width = (int)(height * 0.6603773);
 				int colorR = RandomNumber.between(0, 255);
 				int colorG = RandomNumber.between(0, 255);
 				int colorB = RandomNumber.between(0, 255);
 				int colorA = 255;
-			 Sheep aSheep = new Sheep( x, y, height, width, new Color(colorR, colorG, colorB, colorA));
+			 Sheep aSheep = new Sheep( 600, 500, height, width, new Color(colorR, colorG, colorB, colorA));
 				
 					Sheeps.add(aSheep);
 				
@@ -55,4 +56,11 @@ public class Scene {
 				aSheep.getBody().setColor(color);
 			}
 		}
+		
+		public void setSize(int size) {
+			for(Sheep aSheep: Sheeps) {
+				aSheep.setSize(size);
+				
+			}
+	    }
 }

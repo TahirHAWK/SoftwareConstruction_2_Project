@@ -32,4 +32,7 @@ public class DrawingArea extends JPanel {
 	public void changeColor(Color c) {
 		scene.setColor(c);
 	}
+	public void changeSize(int size) {
+		scene.setSize(size);
+	}
 }
