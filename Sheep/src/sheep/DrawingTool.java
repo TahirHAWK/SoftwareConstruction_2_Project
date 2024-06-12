@@ -45,11 +45,11 @@ public class DrawingTool extends JFrame implements ActionListener {
 			System.out.println("green");
 		} else if (e.getSource() == buttons.getColorButtonGray()) {
 			tidyUpDrawingArea();
-//			drawing.getVillage().setTrees();
+			drawing.changeColor(Color.DARK_GRAY);
 			System.out.println("gray");
 		} else if (e.getSource() == buttons.getColorButtonBlack()) {
 			tidyUpDrawingArea();
-//			drawing.getVillage().setVillage();
+			drawing.changeColor(Color.black);
 			System.out.println("black");
 		} else if (e.getSource() == buttons.getSmall()) {
 			tidyUpDrawingArea();
