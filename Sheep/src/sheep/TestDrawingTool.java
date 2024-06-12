@@ -1,15 +1,5 @@
 
 package sheep;
-
-/**
- * Provides a test application window with a panel.
- * 
- * @author Björn Gottfried
- * 
- * @version 1.0
- */
-
-
 import java.awt.Dimension;
 import javax.swing.JFrame;
 
@@ -28,3 +18,5 @@ public class TestDrawingTool {
 		new TestDrawingTool("Sheep");
 	}
 }
+
+

@@ -20,7 +20,7 @@ public class Scene {
 	 }
 	 
 	 private void drawSomeSheeps() {
-		 for(int i = 0; i< 4; i++) {
+		 for(int i = 0; i< 2; i++) {
 			 int y = generateRandom(0, 650);
 			 int x = generateRandom(100, 1500);
 			 int height = 600;
@@ -35,17 +35,6 @@ public class Scene {
 				
 		 }
 	 }
-	 public void drawAt(Graphics pen, int numberOfSheeps) {	 
-		 for(int i = 0; i< numberOfSheeps; i++) {
-			 int height = generateRandom(400, 700) + i *200;
-			 int width = generateRandom(200, 500);
-			 
-			 System.out.println(height + width);
-			 if(!vacantProperty(Sheeps.get(i)) || i==0) {
-				 Sheeps.get(i).drawAt(height, width);
-			 }
-		 }		 
-	 }	
 	 
 		private boolean vacantProperty(Sheep aSheep) {
 			boolean intersects = false;
@@ -56,6 +45,12 @@ public class Scene {
 		}
 		
 		public void draw() {
+			for(Sheep aSheep: Sheeps) {
+				aSheep.draw();
+			}
+		}
+		
+		public void setGreen() {
 			for(Sheep aSheep: Sheeps) {
 				aSheep.draw();
 			}

@@ -8,6 +8,7 @@ public class Sheep implements LocatedRectangle {
     private Body body;
     private int x, y;
     private int width, height;
+    
 
     // Constructor
     public Sheep(int x , int y, int height, int width, Color bodyColor) {
