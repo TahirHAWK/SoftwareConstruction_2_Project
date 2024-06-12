@@ -45,8 +45,8 @@ public void drawAt(int left, int bottom){
 		Drawing.pen().setColor(Color.LIGHT_GRAY);
 		Drawing.pen().fillOval((left-10), (int)(bottom+10), super.getWidth(), super.getHeight());
 		
-		eye1.drawAt(left+5, bottom+5);
-		eye2.drawAt(left+20, bottom+5);
+		eye1.drawAt(left+10, bottom-30);
+		eye2.drawAt(left+25, bottom-30);
 		mouth.drawAt(left, bottom);
 //		nose.drawAt(left, bottom);
 	}
@@ -58,6 +58,8 @@ public void drawAt(int left, int bottom){
 	
 	ear1.setSize(size);
 	ear2.setSize(size);
+	eye1.setSize(size);
+	eye2.setSize(size);
 	mouth.setSize(size);
 	nose.setSize(size);
 	
