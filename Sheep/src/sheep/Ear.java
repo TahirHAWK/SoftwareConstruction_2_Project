@@ -8,6 +8,7 @@ public class Ear extends Organ{
 //	height 100, width 40
 	public Ear(int height, int width) {
 		super(height, width);
+		System.out.println(height + " " + width + " ear");
 	}
 	
 public void drawAt(int left, int bottom){
@@ -21,11 +22,14 @@ public void setSize(int size) {
 	
 	System.out.println(size + " ear");
 	if(size == 1){
-		this.setHeight((int)(200* 0.25 * 0.167));
-		this.setWidth((int)( 200 * 0.6603773* 0.32 * 0.09));
+		this.setHeight((int)(200 * 0.167));
+		this.setWidth((int)( 200 * 0.6603773 * 0.09));
+		System.out.println((int)(200* 0.25 * 0.167) + " " + (int)( 200 * 0.6603773* 0.32 * 0.09) + " ear");
 	} else {
-		this.setHeight((int)(600* 0.25* 0.167));
-		this.setWidth((int)(600 * 0.6603773 * 0.32 * 0.09));		
-		}
+		this.setHeight((int)(600*  0.167));
+		this.setWidth((int)(600 * 0.6603773 * 0.09));		
+		System.out.println((int)(600* 0.25* 0.167) + " " + (int)(600 * 0.6603773 * 0.32 * 0.09) + " ear");
+
+	}
 	}
 }
