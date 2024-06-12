@@ -15,15 +15,11 @@ public class DrawingTool extends JFrame implements ActionListener {
 
 	public DrawingTool(String title) {
 		super(title);
-		
 		setLayout(new BorderLayout());
-
 		constructButtonMenu();
 		constructDrawingArea();
-
 		Dimension screenSize = getToolkit().getScreenSize();
 		setBounds(0, 0, screenSize.width, screenSize.height);
-
 		setVisible(true);
 	}
 	

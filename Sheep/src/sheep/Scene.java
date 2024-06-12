@@ -34,13 +34,13 @@ public class Scene {
 		 }
 	 }
 	 
-		private boolean vacantProperty(Sheep aSheep) {
-			boolean intersects = false;
-			for(Sheep h : Sheeps) {
-				intersects = intersects || h.intersects(aSheep);
-			}
-			return !intersects;
-		}
+//		private boolean vacantProperty(Sheep aSheep) {
+//			boolean intersects = false;
+//			for(Sheep h : Sheeps) {
+//				intersects = intersects || h.intersects(aSheep);
+//			}
+//			return !intersects;
+//		}
 		
 		public void draw() {
 			for(Sheep aSheep: Sheeps) {

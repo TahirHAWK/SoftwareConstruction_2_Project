@@ -12,14 +12,11 @@ public class Body extends Organ{
 		super(height, width);
 		this.bodyColor = bodyColor;
 		this.size = size;
-//		leg 110, 20
 		leg1 = new Leg((int)(height * 0.184), (int)(width * 0.0506), size);
 		leg2 = new Leg((int)(height *  0.184), (int)(width * 0.0506), size);
 		leg3 = new Leg((int)(height *  0.184), (int)(width * 0.0506), size);
 		leg4 = new Leg((int)(height *  0.184), (int)(width * 0.0506), size);
-//		 Tail(40, 20);
 		tail = new Tail((int)(height *  0.0667), (int)(width * 0.0506));
-		System.out.println(bodyColor);
 	}
 	
 public void drawAt(int left, int bottom){
@@ -31,7 +28,6 @@ public void drawAt(int left, int bottom){
 		leg4.drawAt(left+250, bottom+220);
 		tail.drawAt(left, bottom);
 			Drawing.pen().setColor(this.bodyColor);
-////			400, 250
 			Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
 	} else {
 //		for size small
@@ -40,9 +36,7 @@ public void drawAt(int left, int bottom){
 		leg3.drawAt(left+90, bottom+70);
 		leg4.drawAt(left+110, bottom+75);
 		tail.drawAt(left-245, bottom-25);
-			
 			Drawing.pen().setColor(this.bodyColor);
-//			400, 250
 			Drawing.pen().fillOval(left+10, bottom, (int)(super.getWidth()*1.012), (int)(super.getHeight()*0.41666667));
 	}
 	

@@ -12,8 +12,6 @@ public class Sheep implements LocatedRectangle {
 
     // Constructor
     public Sheep(int x , int y, Color bodyColor, int size) {
-//    	int x, int y, int height, int width
-//    	150,120
     	this.x = x;
     	this.y = y;
     	this.size = size;

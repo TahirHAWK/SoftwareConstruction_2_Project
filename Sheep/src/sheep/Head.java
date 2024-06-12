@@ -12,15 +12,11 @@ public class Head extends Organ{
 	public Head(int height, int width, int size) {
 		super((int)(height* 0.25),(int)( width* 0.32));
 		this.size = size;
-//		mouth = 155,30
 		mouth = new Mouth((int)(height* 0.26),(int)( width* 0.09));
-//		Ear(100, 40)
 		ear1 = new Ear((int)(height* 0.167),(int)( width* 0.09));
 		ear2 = new Ear((int)(height* 0.167),(int)( width* 0.09));
-//		Eye(-16, 70)
 		eye1 = new Eye((int)(-(height* 0.025)),(int)( width* 0.15),height, width);
 		eye2 = new Eye((int)(-(height* 0.025)),(int)( width* 0.15), height, width);
-//		Nose(147, 20)
 		nose = new Nose((int)(height * 0.245), (int)(width * 0.055));
 	}
 	
