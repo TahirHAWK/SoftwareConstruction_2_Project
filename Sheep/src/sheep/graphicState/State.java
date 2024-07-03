@@ -11,8 +11,8 @@ public abstract class State {
 	protected static HeadState head ;
 	protected static BodyState body ;
 	
-	public abstract State drawHuman();
+	public abstract State drawSheep();
 	public abstract State drawHead(); 
-	public abstract State drawghost();
+	public abstract State drawBody();
 
 }

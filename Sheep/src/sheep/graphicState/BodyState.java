@@ -14,7 +14,7 @@ private static final BodyState INSTANCE = new BodyState();
 	}
 
 	@Override
-	public State drawghost() {
+	public State drawBody() {
 		return INSTANCE;
 	}
 	
@@ -25,7 +25,7 @@ private static final BodyState INSTANCE = new BodyState();
 	}
 
 	@Override
-	public State drawHuman() {
+	public State drawSheep() {
 		return SheepState.getInstance();
 	}
 	

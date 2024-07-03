@@ -12,7 +12,7 @@ private static final HeadState INSTANCE = new HeadState();
 	}
 
 	@Override
-	public State drawghost() {
+	public State drawBody() {
 		return BodyState.getInstance();
 	}
 
@@ -22,7 +22,7 @@ private static final HeadState INSTANCE = new HeadState();
 	}
 
 	@Override
-	public State drawHuman() {
+	public State drawSheep() {
 		return SheepState.getInstance();
 	}
 }

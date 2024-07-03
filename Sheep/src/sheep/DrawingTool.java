@@ -55,6 +55,8 @@ public class DrawingTool extends JFrame implements ActionListener {
 			tidyUpDrawingArea();
 			drawing.changeSize(3);
 			System.out.println("large");
+		} else if(e.getSource() == buttons.getHead()) {
+			
 		} 
 	}
 
