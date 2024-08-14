@@ -31,8 +31,6 @@ This is a Java-based graphical user interface (GUI) project that allows users to
   <img src="https://github.com/TahirHAWK/SoftwareConstruction_2_Project/blob/main/UML%20diagram.jpeg" alt="Screenshot 1" width="900"/>
 </p>
 
-# Sheep GUI Project
-
 ## Contributors
 
 We'd like to acknowledge the following contributor to this project:
